@@ -1,0 +1,678 @@
+/* 
+Template Name: Kem Kem
+Author: Kabbo
+Description:This is Test Portfolio Website
+Tags: portfolio website, html template
+Version: 1.0.0
+
+Table of Content
+================
+**import CSS file**
+**Default CSS**
+
+1.Header Area
+
+ */
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+/* Default CSS */
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #262626;
+	overflow-x: hidden;
+}
+a{
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+h1 {
+	font-weight: 700;
+	font-size: 7.2rem;
+	color: #fff;
+    text-transform: capitalize;
+}
+h2{
+    font-size: 2.4rem;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    text-transform: capitalize;
+}
+h3 {
+	font-weight: 700;
+	font-size: 1.8rem;
+	color: #0fb;
+	text-transform: uppercase;
+}
+h5 {
+    text-transform: capitalize;
+	font-weight: 700;
+	font-size: 1.8rem;
+    color: #fff;
+    transition: .5s;
+}
+ul{
+    list-style: none;
+}
+span {
+	font-size: 1.6rem;
+	color: #0fb;
+}
+.section-padding{
+    padding: 10rem  0;
+}
+.light a {
+	position: fixed;
+	z-index: 99999;
+	font-size: 2rem;
+	top: 10rem;
+	right: 0;
+	width: 3.5rem;
+	height: 3.5rem;
+	color: #212121;
+	background: #0fb;
+	display: inline-block;
+	text-align: center;
+	line-height: 3.5rem;
+	border-radius: 5px;
+}
+.white{
+	background-color: #2371ae;
+	color: #000 !important;
+}
+.off-canvas{
+	transition: .5s;
+	left: 0 !important;
+	display: block !important;
+}
+  /* ********************************* */
+ /* ******HEADER AREA CSS START****** */
+/* ********************************* */
+.header-area {
+	padding: 1rem 0;
+	position: relative;
+	box-shadow: 0 0 0 1px #393838;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	background: #262626;
+}
+.logo img {
+	height: 6rem;
+	width: 6rem;
+	object-fit: cover;
+}
+.menu ul {
+	display: flex;
+	justify-content: flex-end;
+    align-items: center;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.menu ul li a {
+	margin: 0 3rem;
+    transition: .5s;
+}
+.menu ul li a:hover{
+    color: #0ff;
+}
+.nav-link {
+	color: #fff;
+    padding: 0;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #0ff !important;
+	background: none !important;
+}
+.contact-btn {
+	margin: 0 !important;
+	padding: 0.7rem 2.5rem !important;
+	display: inline-block;
+    color: #000 !important;
+    border: 1px solid transparent !important;
+	border-radius: 5px;
+    transition: 0.5s;
+    background: #0fb !important;
+}
+.contact-btn:hover{
+    color: #0fb !important;
+    background: none !important;
+    border: 1px solid #0fb !important;
+}
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.mobile-menu a {
+	font-size: 2rem;
+	display: none;
+	border: 1px solid #fff;
+	width: 3.5rem;
+	height: 3.5rem;
+	text-align: center;
+	line-height: 3.5rem;
+	border-radius: 5px;
+}
+.mobile-menu a:hover{
+    color: #0ff;
+}
+  /* ********************************* */
+ /* ******HEADER AREA CSS END****** */
+/* ********************************* */
+
+  /* ********************************* */
+ /* ******BANNER AREA CSS START****** */
+/* ********************************* */
+.animate-3{
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    width: 4rem;
+    height: 4rem;
+    background: #E31F71;
+    opacity: 0.6;
+    display: block;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation: box-1 50s linear infinite;
+    z-index: -1;
+}
+@keyframes box-1{
+    0%{
+        transform: translate(0px);
+    }
+    25%{
+        transform: translateY(200px);
+    }
+    75%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translateY(-500px);
+    }
+} 
+.animate-1 {
+	width: 7rem;
+	height: 7rem;
+	background: #0fb;
+    opacity: 0.5;
+	display: block;
+	border-radius: 5px;
+    animation: box 30s linear infinite;
+}
+@keyframes box{
+    0%{
+        transform: translateX(200px);
+    }
+    25%{
+        transform: translateX(300px);
+    }
+    50%{
+        transform: translateY(-500px);
+    }
+    75%{
+        transform: translateX(300px);
+    }
+    100%{
+        transform: translateY(700px);
+    }
+}
+.animate-2 span{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: yellow;
+    opacity: 0.4;
+    display: block;
+    animation: box-5 30s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+@keyframes box-5{
+    0%{
+        transform: translateY(100px);
+    }
+    25%{
+        transform: translateX(-300px);
+    }
+    75%{
+        transform: translateY(400px);
+    }
+    100%{
+        transform: translateX(-300px);
+    }
+}
+.hi {
+	text-transform: uppercase;
+}
+.hi img {
+	height: 2.3rem;
+	margin: 0 .7rem;
+    margin-top: -1rem;
+    animation: hey 1s linear infinite;
+}
+@keyframes hey{
+    0%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(20deg);
+    }
+    10%{
+        transform: rotate(35deg);
+    }
+}
+.left-baner h3 img {
+	height: 3rem;
+	margin-top: -2rem;
+	margin-left: .5rem;
+	width: auto;
+}
+.skil {
+	max-width: 30rem;
+    margin-top: 1.5rem;
+}
+.btn-1 {
+	padding: 1rem 3rem;
+	border: 1px solid #fff;
+	display: inline-block;
+	border-radius: 5px;
+	font-size: 1.4rem;
+	margin-top: 2rem;
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+}
+.btn-1::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -109px;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background: #0fb;
+	z-index: -1;
+	transform: rotate(-45deg);
+    transition: .5s;
+}
+.btn-1:hover::after{
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+}
+.btn-1:hover{
+    color: #000;
+    border-color: #0ff;
+}
+.right-banner {
+	text-align: right;
+    position: relative;
+}
+.right-banner img {
+	height: 45rem;
+	width: auto;
+}
+  /* ********************************* */
+ /* ******BANNER AREA CSS END****** */
+/* ********************************* */
+
+  /* ********************************* */
+ /* ******ABOUT AREA CSS START****** */
+/* ********************************* */
+.about-area{
+    position: relative;
+}
+.shape {
+	position: absolute;
+	top: 50%;
+	left: -80px;
+	transform: translateY(-50%);
+}
+.shape img {
+	width: 20rem;
+	height: 15rem;
+	object-fit: cover;
+}
+.left-about{
+    text-align: center;
+}
+.about-image{
+    position: relative;
+}
+.about-image::after {
+	content: '';
+	position: absolute;
+	border-top: 1rem solid #0fb;
+	border-left: 1rem solid #0fb;
+	width: 75%;
+	height: 93%;
+	left: 13px;
+	top: -24px;
+}
+.about-image img {
+	height: 55rem;
+	width: auto;
+}
+.intro{
+    position: relative;
+}
+.intro::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: -60px;
+	width: 5rem;
+	height: 3px;
+	background: #0fb;
+	transform: translateY(-50%);
+	border-radius: 1rem;
+}
+.right-about h2 {
+	margin: 2rem 0;
+}
+.right-about p {
+	max-width: 37rem;
+	margin-bottom: 1.5rem;
+}
+  /* ********************************* */
+ /* ******ABOUT AREA CSS END****** */
+/* ********************************* */
+
+  /* ********************************* */
+ /* ******SERVICE AREA CSS START****** */
+/* ********************************* */
+.all-title {
+	max-width: 20rem;
+	margin: 0 auto;
+    padding-bottom: 5rem;
+}
+.single-service {
+	padding: 2rem 6rem 3rem 4rem;
+	background: #2b2b2b;
+	box-shadow: 0 1.6rem 2.4rem rgba(0,0,0,.25);
+	border-radius: 1rem;
+    transition: .5s;
+}
+.service-icon {
+	width: 8rem;
+	height: 8rem;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 8rem;
+    margin-bottom: 3rem;
+}
+.service-1 {
+	border-bottom: 1rem solid #00AEFF;
+}
+.single-service:hover{
+    background: #0fb;
+    color: #000;
+	transform: translateY(-30px);
+}
+.single-service:hover .service-content h5 {
+    color: #000 !important;
+}
+.service-2 {
+	border-bottom: 1rem solid #E31F71;
+}
+.service-3 {
+	border-bottom: 1rem solid #8838B4;
+}
+.service-1 .service-icon {
+    background: rgba(0,174,255,.2);
+}
+.service-2 .service-icon {
+	background: rgba(227,31,113,.2);
+}
+.service-3 .service-icon{
+    background: rgba(136,56,180,.2);
+}
+.service-content h5 {
+	margin-bottom: 1.5rem;
+    transition: .5s;
+}
+.service-content p {
+	line-height: 2rem;
+    transition: .5s;
+}
+  /* ********************************* */
+ /* ******SERVICE AREA CSS END****** */
+/* ********************************* */
+
+  /* ********************************* */
+ /* ******WORK AREA CSS START****** */
+/* ********************************* */
+.work-items {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-column-gap: 2.7rem;
+}
+.single-work{
+    background: #2b2b2b;
+	box-shadow: 0 1.6rem 2.4rem rgba(0,0,0,.25);
+	border-radius: 1rem;
+    transition: .5s;
+    padding: 2rem;
+}
+.single-portfolio {
+	box-shadow: 0 1.6rem 2.4rem rgba(0,0,0,.25);
+}
+.single-work:hover{
+    background: #0fb;
+    color: #000;
+}
+.single-work:hover .work-content h5{
+    color: #000;
+}
+.work-image {
+	padding: 1.5rem 0;
+}
+.work-content p {
+	line-height: 2rem;
+}
+  /* ********************************* */
+ /* ******WORK AREA CSS END****** */
+/* ********************************* */
+
+  /* ********************************* */
+ /* ******PORTFOLIO AREA CSS START****** */
+/* ********************************* */
+.portfolio-image{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-image::after {
+	content: '';
+	position: absolute;
+	bottom: -87%;
+	left: -40%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg,#bb47d4 0,#2371ae);
+	transform: rotate(135deg);
+	transition: .6s;
+}
+.portfolio-image::before {
+	content: '';
+	position: absolute;
+	top: -57%;
+	right: -300px;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg,#bb47d4 0,#2371ae);
+	transform: rotate(135deg);
+}
+.single-portfolio:hover .portfolio-image::after {
+	top: -80%;
+	left: 50%;
+}
+.single-portfolio:hover .portfolio-image::before {
+	right: -80%;
+	bottom: 50%;
+}
+.portfolio-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    transition: .5s;
+    transform: scale(0);
+    border-radius: 7px;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 5rem;
+	text-align: center;
+}
+.single-portfolio:hover .portfolio-overlay{
+    transform: scale(1);
+}
+.portfolio-image img {
+	height: 50rem;
+	width: 100%;
+	object-fit: cover;
+    border-radius: 7px;
+}
+.portfolio-overlay p{
+    margin: 2rem 0;
+}
+.portfolio-btn {
+	padding: 7px 25px;
+	background: linear-gradient(90deg,#bb47d4 0,#2371ae);
+	display: inline-block;
+	border-radius: 4rem;
+	font-size: 1.4rem;
+    margin-top: 2rem;
+}
+.portfolio-btn:hover{
+    color: #0fb;
+}
+  /* ********************************* */
+ /* ******PORTFOLIO AREA CSS END****** */
+/* ********************************* */
+
+  /* ********************************* */
+ /* ******CONTACT AREA CSS START****** */
+/* ********************************* */
+.contact-title {
+	max-width: 16rem;
+	margin: 0 auto;
+}
+.available{
+    max-width: 43rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+.single-contact {
+	display: inline-flex;
+	align-items: center;
+	margin: 1.5rem 0;
+}
+.single-contact span {
+	width: 6rem;
+	height: 6rem;
+	border-radius: 50%;
+	color: #000;
+	background: #0fb;
+	text-align: center;
+	line-height: 6rem;
+	font-size: 2rem;
+    margin-right: 2.5rem;
+}
+.single-contact a:hover{
+    text-decoration: underline;
+    color: #0fb;
+}
+input,textarea{
+    height: 5rem;
+    padding: 1.2rem;
+	background: none;
+    margin: 1.3rem 0;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	outline: none;
+	color: #fff;
+}
+input::placeholder,
+textarea::placeholder {
+	text-transform: capitalize;
+}
+input[type="text"] {
+	width: 100%;
+}
+input[type="email"] {
+	width: calc(50% - 1rem);
+    margin-right: 1.6rem;
+}
+input[type="number"] {
+    width: calc(50% - 1rem);
+}
+textarea{
+    width: 100%;
+    height: 15rem;
+    resize: none;
+}
+input[type="submit"] {
+	text-transform: capitalize;
+	padding: 1rem 4rem;
+    background: #0fb;
+    font-weight: 500;
+    color: #000;
+    transition: .5s
+}
+input[type="submit"]:hover{
+    background: transparent;
+    color: #fff;
+}
+  /* ********************************* */
+ /* ******CONTACT AREA CSS END****** */
+/* ********************************* */
+
+  /* ********************************* */
+ /* ******FOOTER AREA CSS START****** */
+/* ********************************* */
+.footer-area {
+    padding: 7rem 0 2rem 0;
+	background: #212121;
+}
+.footer-logo img {
+	height: 6rem;
+	width: 6rem;
+	object-fit: cover;
+}
+.single-footer p {
+	margin: 0 !important;
+	text-align: center;
+}
+.single-footer ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.single-footer ul li a {
+	margin: 0 1.2rem;
+	display: inherit;
+    font-size: 2.3rem;
+}
+.single-footer ul li a:hover{
+    color: #0fb;
+}
+  /* ********************************* */
+ /* ******FOOTER AREA CSS END****** */
+/* ********************************* */
